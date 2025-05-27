@@ -1,0 +1,209 @@
+/* Admission Process Styles */
+.admission-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.admission-tab {
+  padding: 12px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #1a3a5f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* border-radius: 4px; */
+}
+
+.admission-tab:hover {
+  background-color: #e9ecef;
+}
+
+.admission-tab.active {
+  background-color: #1a3a5f;
+  color: white;
+  border-color: #1a3a5f;
+}
+
+.admission-content {
+  background-color: #fff;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.admission-pane {
+  display: none;
+}
+
+.admission-pane.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.admission-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.admission-table th,
+.admission-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.admission-table th {
+  background-color: #1a3a5f;
+  color: white;
+  font-weight: 500;
+}
+
+.admission-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.admission-table tr:hover {
+  background-color: #f0f4f9;
+}
+
+.eligibility-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.eligibility-card {
+  background-color: #f8f9fa;
+  /* border-radius: 8px; */
+  padding: 20px;
+  border-left: 4px solid #b73e3e;
+}
+
+.eligibility-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.eligibility-card .card-header svg {
+  color: #b73e3e;
+}
+
+.eligibility-card ul {
+  padding-left: 20px;
+}
+
+.eligibility-card li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 15px;
+}
+
+.step-number {
+  flex: 0 0 30px;
+  height: 30px;
+  background-color: #1a3a5f;
+  color: white;
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  margin: 0 0 5px 0;
+  color: #1a3a5f;
+}
+
+.documents-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.document-category {
+  background-color: #f8f9fa;
+  padding: 20px;
+  /* border-radius: 8px; */
+}
+
+.document-category h5 {
+  color: #1a3a5f;
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.document-category ul {
+  list-style: none;
+}
+
+.notice-box {
+  display: flex;
+  gap: 10px;
+  background-color: #fff8f8;
+  border-left: 4px solid #b73e3e;
+  padding: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.notice-box svg {
+  flex: 0 0 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admission-tabs {
+    flex-direction: column;
+  }
+
+  .admission-tab {
+    width: 100%;
+  }
+
+  .admission-content {
+    padding: 20px;
+  }
+
+  .eligibility-cards,
+  .process-steps,
+  .documents-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

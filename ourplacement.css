@@ -1,0 +1,421 @@
+/* Placement Section Styles */
+.placement-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    margin: 40px 0;
+  }
+  
+  .placement-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    color: #1a3a5f;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .header-line {
+    height: 3px;
+    width: 80px;
+    background-color: #1a3a5f;
+    margin: 0 auto;
+  }
+  
+  .placement-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .placement-tab {
+    padding: 12px 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #555;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .placement-tab:hover {
+    color: #1a3a5f;
+  }
+  
+  .placement-tab.active {
+    color: #1a3a5f;
+    border-bottom: 3px solid #1a3a5f;
+  }
+  
+  .placement-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .placement-pane.active {
+    display: block;
+  }
+  
+  .placement-intro {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 4px solid #1a3a5f;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* Placed Students Gallery */
+  .placement-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .placement-card {
+    background-color: #fff;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .placement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .placement-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .placement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .placement-card:hover .placement-image img {
+    transform: scale(1.05);
+  }
+  
+  .placement-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(26, 58, 95, 0.9), transparent);
+    padding: 15px;
+    color: white;
+  }
+  
+  .placement-overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+  }
+  
+  .placement-overlay p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .placement-details {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    border: 1px solid #eee;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .company-logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  
+  .placement-info {
+    flex-grow: 1;
+  }
+  
+  .placement-info h4 {
+    margin: 0 0 5px 0;
+    color: #1a3a5f;
+    font-size: 16px;
+  }
+  
+  .placement-info p {
+    margin: 3px 0;
+    font-size: 13px;
+    color: #666;
+  }
+  
+  /* Campus Drives Timeline */
+  .drive-timeline {
+    margin-top: 20px;
+  }
+  
+  .drive-card {
+    display: flex;
+    background: #fff;
+    margin-bottom: 20px;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .drive-date {
+    width: 80px;
+    background-color: #1a3a5f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    flex-shrink: 0;
+  }
+  
+  .drive-date .day {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .drive-date .month {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 3px 0;
+  }
+  
+  .drive-date .year {
+    font-size: 14px;
+  }
+  
+  .drive-content {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .drive-content h3 {
+    margin: 0 0 10px 0;
+    color: #1a3a5f;
+  }
+  
+  .drive-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .drive-details strong {
+    color: #333;
+  }
+  
+  .drive-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    /* border-radius: 20px; */
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .drive-status.completed {
+    background-color: #e6f7ee;
+    color: #00a651;
+  }
+  
+  .drive-status.upcoming {
+    background-color: #fff8e6;
+    color: #ffaa00;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .placement-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .drive-card {
+      flex-direction: column;
+    }
+    
+    .drive-date {
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px 15px;
+    }
+    
+    .drive-date .day {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    
+    .drive-date .month {
+      margin: 0 5px;
+    }
+    
+    .section-header h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .placement-tabs {
+      flex-direction: column;
+      border-bottom: none;
+    }
+    
+    .placement-tab {
+      border-bottom: none;
+      border-left: 3px solid transparent;
+      text-align: left;
+    }
+    
+    .placement-tab.active {
+      border-bottom: none;
+      border-left: 3px solid #1a3a5f;
+    }
+    
+    .placement-intro {
+      padding: 15px;
+      font-size: 15px;
+    }
+    
+    .placement-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .drive-card {
+    display: flex;
+    background: #fff;
+    margin-bottom: 20px;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .drive-image {
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .drive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .drive-card:hover .drive-image img {
+    transform: scale(1.05);
+  }
+  
+  .drive-date {
+    width: 80px;
+    background-color: #1a3a5f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    flex-shrink: 0;
+  }
+  
+  .drive-content {
+    padding: 20px;
+    flex-grow: 1;
+    min-width: 300px;
+  }
+  
+  /* Responsive styles for drive cards */
+  @media (max-width: 992px) {
+    .drive-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .drive-card {
+      flex-direction: column;
+    }
+    
+    .drive-image {
+      width: 100%;
+      height: 200px;
+      order: 1;
+    }
+    
+    .drive-date {
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px 15px;
+      order: 2;
+    }
+    
+    .drive-content {
+      order: 3;
+    }
+    
+    .drive-date .day {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    
+    .drive-date .month {
+      margin: 0 5px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .drive-image {
+      height: 160px;
+    }
+    
+    .drive-content {
+      min-width: auto;
+    }
+  }

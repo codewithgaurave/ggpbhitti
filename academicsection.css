@@ -1,0 +1,169 @@
+/* Academic Programs Section */
+.academic-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.academic-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Vertical Tabs */
+.academic-tabs {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 250px;
+    gap: 5px;
+}
+
+.academic-tab {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border: none;
+    color: #1a3a5f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    border-left: 4px solid transparent;
+    font-size: 16px;
+}
+
+.academic-tab:hover {
+    background-color: #e9ecef;
+}
+
+.academic-tab.active {
+    background-color: #1a3a5f;
+    color: white;
+    border-left: 4px solid #f9cb9c;
+}
+
+.tab-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    fill: currentColor;
+}
+
+/* Content Area */
+.academic-content {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.academic-pane {
+    display: none;
+}
+
+.academic-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.programmes-header {
+    margin-bottom: 30px;
+}
+
+.programmes-header h3 {
+    color: #1a3a5f;
+    margin-bottom: 10px;
+}
+
+.programmes-header p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.programmes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.programmes-table th,
+.programmes-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.programmes-table th {
+    background-color: #1a3a5f;
+    color: white;
+    font-weight: 500;
+}
+
+.programmes-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.programmes-table tr:hover {
+    background-color: #f0f4f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .academic-container {
+        flex-direction: column;
+    }
+    
+    .academic-tabs {
+        flex-direction: row;
+        flex: auto;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .academic-tab {
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 4px solid transparent;
+    }
+    
+    .academic-tab.active {
+        border-left: none;
+        border-bottom: 4px solid #f9cb9c;
+    }
+}
+
+@media (max-width: 768px) {
+    .academic-section {
+        padding: 40px 15px;
+    }
+    
+    .academic-content {
+        padding: 20px;
+    }
+    
+    .programmes-table th,
+    .programmes-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    .programmes-header h3 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,144 @@
+.rti-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.rti-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Vertical Tabs */
+.rti-tabs {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 250px;
+    gap: 5px;
+}
+
+.rti-tab {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border: none;
+    color: #1a3a5f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    border-left: 4px solid transparent;
+    font-size: 16px;
+}
+
+.rti-tab:hover {
+    background-color: #e9ecef;
+}
+
+.rti-tab.active {
+    background-color: #1a3a5f;
+    color: white;
+    border-left: 4px solid #f9cb9c;
+}
+
+.tab-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    fill: currentColor;
+}
+
+/* Content Area */
+.rti-content {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.rti-pane {
+    display: none;
+}
+
+.rti-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Table Styles */
+.rti-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.rti-table th,
+.rti-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.rti-table th {
+    background-color: #1a3a5f;
+    color: white;
+    font-weight: 500;
+}
+
+.rti-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.rti-table tr:hover {
+    background-color: #f0f4f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .rti-container {
+        flex-direction: column;
+    }
+    
+    .rti-tabs {
+        flex-direction: row;
+        flex: auto;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .rti-tab {
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 4px solid transparent;
+    }
+    
+    .rti-tab.active {
+        border-left: none;
+        border-bottom: 4px solid #f9cb9c;
+    }
+}
+
+@media (max-width: 768px) {
+    .rti-section {
+        padding: 40px 15px;
+    }
+    
+    .rti-content {
+        padding: 20px;
+    }
+    
+    .rti-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

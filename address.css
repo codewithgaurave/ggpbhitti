@@ -1,0 +1,271 @@
+/* Contact Section Styles with Unique Classes */
+.contact-section-gps {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-header-gps {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header-gps h2 {
+    color: #1a3a5f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.header-line-gps {
+    height: 3px;
+    width: 80px;
+    background-color: #b73e3e;
+    margin: 0 auto;
+}
+
+.contact-container-gps {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-tabs-container-gps {
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.info-tabs-gps {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-tab-gps {
+    padding: 15px 25px;
+    background-color: #f8f9fa;
+    border: none;
+    color: #1a3a5f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.info-tab-gps:hover {
+    background-color: #e9ecef;
+}
+
+.info-tab-gps.active {
+    background-color: #fff;
+    color: #1a3a5f;
+    border-bottom: 3px solid #1a3a5f;
+}
+
+.info-tab-content-gps {
+    padding: 30px;
+}
+
+.info-pane-gps {
+    display: none;
+}
+
+.info-pane-gps.active {
+    display: block;
+    animation: fadeIn-gps 0.5s ease;
+}
+
+.institute-logo-gps {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.institute-logo-gps img {
+    max-width: 200px;
+    height: auto;
+}
+
+.contact-details-gps {
+    margin-bottom: 20px;
+}
+
+.contact-details-gps h3 {
+    color: #1a3a5f;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.contact-item-gps {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-item-gps svg {
+    flex: 0 0 20px;
+    margin-top: 3px;
+}
+
+.contact-item-gps p {
+    margin: 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+.map-container-gps {
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.phone-directory-gps h3 {
+    color: #1a3a5f;
+    margin-bottom: 20px;
+}
+
+.directory-table-gps {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.directory-table-gps th,
+.directory-table-gps td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.directory-table-gps th {
+    background-color: #1a3a5f;
+    color: white;
+    font-weight: 500;
+}
+
+.directory-table-gps tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.directory-table-gps tr:hover {
+    background-color: #f0f4f9;
+}
+
+/* Feedback Form Styles */
+.feedback-form-gps {
+    background-color: #f8f9fa;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-form-gps h3 {
+    color: #1a3a5f;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.form-group-gps {
+    margin-bottom: 20px;
+}
+
+.form-group-gps label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a3a5f;
+    font-weight: 500;
+}
+
+.form-group-gps input,
+.form-group-gps select,
+.form-group-gps textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group-gps input:focus,
+.form-group-gps select:focus,
+.form-group-gps textarea:focus {
+    outline: none;
+    border-color: #1a3a5f;
+}
+
+.form-group-gps textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn-gps {
+    background-color: #1a3a5f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn-gps:hover {
+    background-color: #0d2a4a;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .info-tabs-gps {
+        flex-wrap: wrap;
+    }
+    
+    .info-tab-gps {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section-gps {
+        padding: 40px 15px;
+    }
+    
+    .info-tab-content-gps,
+    .feedback-form-gps {
+        padding: 20px;
+    }
+    
+    .directory-table-gps {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .institute-logo-gps img {
+        max-width: 150px;
+    }
+    
+    .contact-details-gps h3,
+    .phone-directory-gps h3,
+    .feedback-form-gps h3 {
+        font-size: 20px;
+    }
+    
+    .info-tab-gps {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .form-group-gps input,
+    .form-group-gps select,
+    .form-group-gps textarea {
+        padding: 10px 12px;
+    }
+}
+
+@keyframes fadeIn-gps {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

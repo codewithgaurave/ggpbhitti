@@ -1,0 +1,174 @@
+/* Fee Structure Styles */
+.fee-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.fee-tab {
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #1a3a5f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* border-radius: 4px; */
+}
+
+.fee-tab:hover {
+    background-color: #e9ecef;
+}
+
+.fee-tab.active {
+    background-color: #1a3a5f;
+    color: white;
+    border-color: #1a3a5f;
+}
+
+.fee-content {
+    background-color: #fff;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.fee-pane {
+    display: none;
+}
+
+.fee-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.fee-table th, .fee-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fee-table th {
+    background-color: #1a3a5f;
+    color: white;
+    font-weight: 500;
+}
+
+.fee-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.fee-table tr:hover {
+    background-color: #f0f4f9;
+}
+
+.fee-table .highlight-row {
+    background-color: #fff8f8;
+    font-weight: 600;
+}
+
+.fee-notice {
+    display: flex;
+    gap: 10px;
+    background-color: #fff8f8;
+    border-left: 4px solid #b73e3e;
+    padding: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.fee-notice svg {
+    flex: 0 0 20px;
+}
+
+.fee-payment-info, .hostel-notes {
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* border-radius: 8px; */
+    margin-top: 20px;
+}
+
+.fee-payment-info h5, .hostel-notes h5 {
+    color: #1a3a5f;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.scholarship-info {
+    margin-top: 30px;
+}
+
+.fee-payment-info ul li{
+    list-style: none;
+}
+
+.scholarship-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.scholarship-card {
+    background-color: #f8f9fa;
+    /* border-radius: 8px; */
+    padding: 20px;
+    border-left: 4px solid #1a3a5f;
+}
+
+.scholarship-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.scholarship-card .card-header svg {
+    color: #1a3a5f;
+}
+
+.scholarship-card ul {
+    padding-left: 20px;
+}
+
+.scholarship-card li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.hostel-notes ul li{
+    list-style: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .fee-tabs {
+        flex-direction: column;
+    }
+    
+    .fee-tab {
+        width: 100%;
+    }
+    
+    .fee-content {
+        padding: 20px;
+    }
+    
+    .fee-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .scholarship-cards {
+        grid-template-columns: 1fr;
+    }
+}
