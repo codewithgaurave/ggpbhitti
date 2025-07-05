@@ -3,15 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOVERNMENT POLYTECHNIC BAIJPUR BHITI</title>
+    <title>Alumni Form - GOVERNMENT POLYTECHNIC BAIJPUR BHITI</title>
     <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="aboutus.css" />
-    <link rel="stylesheet" href="academicsection.css" />
-    <link rel="stylesheet" href="syllabus.css" />
-    <link rel="stylesheet" href="admissions.css" />
-    <link rel="stylesheet" href="feestructure.css" />
-    <link rel="stylesheet" href="academicinfra.css" />
-    <link rel="stylesheet" href="ourplacement.css" />
+    <link rel="stylesheet" href="alumni.css" />
   </head>
   <body>
     <section class="Header">
@@ -49,25 +43,6 @@
         </div>
 
         <div class="contact-social">
-          <!-- <div class="phone">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              style="margin-right: 5px; color: #f9cb9c"
-            >
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-              ></path>
-            </svg>
-            0853-2250125
-          </div> -->
           <div class="social-icons">
             <a href="#" title="Facebook">
               <svg
@@ -179,7 +154,6 @@
               <a href="/aboutus.html">About institute</a>
               <a href="/mission.html">Mission & Vision</a>
               <a href="/principle.html">Administration</a>
-              <!-- <a href="#">History</a> -->
             </div>
           </li>
           <li><a href="/principle.html">Principal Message</a></li>
@@ -188,7 +162,6 @@
             <div class="dropdown-content">
               <a target="_blank" href="https://www.aicte-india.org/bureaus/approval/approval-process-2025-26">Approvals</a>
               <a target="_blank" href="https://aicte-india.org/bureaus/administration/rules-regulations">Guidelines</a>
-              <!-- <a href="#">Mandatory Disclosures</a> -->
             </div>
           </li>
           <li>
@@ -201,8 +174,7 @@
               <a href="/listofHolidays.html">List of Holidays</a>
             </div>
           </li>
-          <li>
-            <a href="#">RTI</a>
+          <li><a href="#">RTI</a>            
             <div class="dropdown-content">
               <a href="/rti.html">RTI OFFICERS</a>
               <a href="rtiinformation.html">RIGHT TO INFO</a>
@@ -229,13 +201,12 @@
           <li>
             <a href="#">Training & Placement</a>
             <div class="dropdown-content">
-                <a href="/ourplacement.html">Our Placements</a>
-                <a href="/campusdrive.html">Campus Drive</a>
+              <a href="/ourplacement.html">Our Placements</a>
+              <a href="/campusdrive.html">Campus Drive</a>
             </div>
           </li>
           <li><a href="/alumni.html">Alumni</a></li>
-          <li>
-            <a href="#">Contact us</a>
+          <li><a href="#">Contact us</a>
             <div class="dropdown-content">
               <a href="/address.html">Address</a>
               <a href="/mapLocation.html">Maps & Location</a>
@@ -247,105 +218,229 @@
       </div>
     </section>
 
-    <div class="placement-section">
-      <div class="section-header">
-        <h2>Placement Highlights</h2>
-        <div class="header-line"></div>
-      </div>
-
-      <div class="placement-container">
-        <!-- Placement Tabs -->
-        <div class="placement-tabs">
-          <button class="placement-tab" data-tab="placed-students">
-            Our Placed Students
-          </button>
-          <button class="placement-tab active" data-tab="campus-drives">
-            Campus Drives
-          </button>
-        </div>
-
-        <!-- Placement Content -->
-        <div class="placement-content">
-          <!-- Placed Students Tab -->
-          <div class="placement-pane" id="placed-students">
-            <div class="placement-intro">
-              <p>
-                Our students have been successfully placed in top companies
-                across various sectors. Here are some of our achievers:
-              </p>
-            </div>
-
-            <div class="placement-gallery">
-              <!-- Student 1 -->
-              <div class="placement-card">
-                <div class="placement-image">
-                  <img
-                    src="images/placements/student1.jpg"
-                    alt="Rahul Sharma"
-                  />
-                  <div class="placement-overlay">
-                    <h3>Rahul Sharma</h3>
-                    <p>Mechanical Engineering</p>
-                  </div>
+    <!-- Alumni Form Section -->
+    <section class="alumni-form-section">
+      <div class="container">
+        <h2>Alumni Information Form</h2>
+        <p class="subtitle">Please fill in your details to help us track our alumni success</p>
+        
+        <form id="alumniForm" enctype="multipart/form-data">
+          <div class="form-grid">
+            <!-- Personal Information -->
+            <div class="form-group">
+              <h3>Personal Information</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="enrollmentNo">Enrollment Number*</label>
+                  <input type="text" id="enrollmentNo" name="enrollmentNo" required>
                 </div>
-                <div class="placement-details">
-                  <div class="company-logo">
-                    <img
-                      src="images/placements/company1.png"
-                      alt="TATA Motors"
-                    />
-                  </div>
-                  <div class="placement-info">
-                    <h4>TATA Motors</h4>
-                    <p>Design Engineer</p>
-                    <p>2023 Batch</p>
-                    <p>Package: ₹6.5 LPA</p>
-                  </div>
+                <div class="form-field">
+                  <label for="fullName">Full Name*</label>
+                  <input type="text" id="fullName" name="fullName" required>
                 </div>
               </div>
-
-            </div>
-          </div>
-
-          <!-- Campus Drives Tab -->
-          <div class="placement-pane active" id="campus-drives">
-            <div class="placement-intro">
-              <p>We regularly host campus recruitment drives with leading companies. Here are some of our recent and upcoming drives:</p>
-            </div>
-    
-            <div class="drive-timeline">
-              <!-- Drive 1 -->
-              <div class="drive-card">
-                <div class="drive-date">
-                  <span class="day">15</span>
-                  <span class="month">Mar</span>
-                  <span class="year">2024</span>
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="mobile">Mobile Number*</label>
+                  <input type="tel" id="mobile" name="mobile" required>
                 </div>
-                <div class="drive-image">
-                  <img src="images/placements/drive1.jpg" alt="TATA Technologies Drive">
-                </div>
-                <div class="drive-content">
-                  <h3>TATA Technologies</h3>
-                  <div class="drive-details">
-                    <p><strong>Positions:</strong> Design Engineer, Quality Analyst</p>
-                    <p><strong>Eligibility:</strong> All branches, 60% throughout</p>
-                    <p><strong>Package:</strong> ₹5.5 - ₹6.8 LPA</p>
-                    <p><strong>Process:</strong> Aptitude Test → Technical Interview → HR Round</p>
-                  </div>
-                </div>
-                <div class="drive-status completed">
-                  Completed
+                <div class="form-field">
+                  <label for="email">Email*</label>
+                  <input type="email" id="email" name="email" required>
                 </div>
               </div>
-    
-
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" id="dob" name="dob">
+                </div>
+                <div class="form-field">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-field">
+                <label for="currentAddress">Current Address</label>
+                <textarea id="currentAddress" name="currentAddress" rows="3"></textarea>
+              </div>
+            </div>
+            
+            <!-- Academic Information -->
+            <div class="form-group">
+              <h3>Academic Information</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="branch">Branch*</label>
+                  <select id="branch" name="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Mechanical Engineering (Production)">Mechanical Engineering (Production)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="passoutYear">Passout Year*</label>
+                  <select id="passoutYear" name="passoutYear" required>
+                    <option value="">Select Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="percentage">Diploma Percentage/GPA</label>
+                  <input type="text" id="percentage" name="percentage">
+                </div>
+                <div class="form-field">
+                  <label for="higherEducation">Higher Education</label>
+                  <select id="higherEducation" name="higherEducation">
+                    <option value="">Select</option>
+                    <option value="None">None</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.E.">B.E.</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-field">
+                <label for="otherQualifications">Other Qualifications/Certifications</label>
+                <textarea id="otherQualifications" name="otherQualifications" rows="3"></textarea>
+              </div>
+            </div>
+            
+            <!-- Professional Information -->
+            <div class="form-group">
+              <h3>Professional Information</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="employmentStatus">Current Employment Status*</label>
+                  <select id="employmentStatus" name="employmentStatus" required>
+                    <option value="">Select</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Self-Employed">Self-Employed</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Student">Student</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="jobTitle">Job Title/Designation</label>
+                  <input type="text" id="jobTitle" name="jobTitle">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="company">Company/Organization</label>
+                  <input type="text" id="company" name="company">
+                </div>
+                <div class="form-field">
+                  <label for="salary">Current Salary (Annual)</label>
+                  <input type="text" id="salary" name="salary">
+                </div>
+              </div>
+              
+              <div class="form-field">
+                <label for="jobLocation">Job Location</label>
+                <input type="text" id="jobLocation" name="jobLocation">
+              </div>
+              
+              <div class="form-field">
+                <label for="workExperience">Work Experience (Years)</label>
+                <input type="number" id="workExperience" name="workExperience" min="0">
+              </div>
+              
+              <div class="form-field">
+                <label for="skills">Key Skills/Expertise</label>
+                <textarea id="skills" name="skills" rows="3" placeholder="List your key skills separated by commas"></textarea>
+              </div>
+            </div>
+            
+            <!-- Additional Information -->
+            <div class="form-group">
+              <h3>Additional Information</h3>
+              <div class="form-field">
+                <label for="achievements">Notable Achievements/Awards</label>
+                <textarea id="achievements" name="achievements" rows="3"></textarea>
+              </div>
+              
+              <div class="form-field">
+                <label for="contribution">How would you like to contribute to the institute?</label>
+                <select id="contribution" name="contribution">
+                  <option value="">Select</option>
+                  <option value="Mentoring students">Mentoring students</option>
+                  <option value="Guest lectures">Guest lectures</option>
+                  <option value="Placement assistance">Placement assistance</option>
+                  <option value="Financial support">Financial support</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-field">
+                <label for="photo">Upload Your Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+              </div>
+              
+              <div class="form-field">
+                <label for="testimonial">Testimonial/Message for Current Students</label>
+                <textarea id="testimonial" name="testimonial" rows="3"></textarea>
+              </div>
+              
+              <div class="form-field checkbox-field">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent to share this information with the institute*</label>
+              </div>
             </div>
           </div>
-        </div>
+          
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Submit Form</button>
+            <button type="reset" class="reset-btn">Reset Form</button>
+          </div>
+        </form>
       </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="main-footer">
@@ -381,23 +476,6 @@
                   </div>
                 </div>
               </div>
-<!-- 
-              <div class="contact-item">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                  ></path>
-                </svg>
-                <p>05273-252012</p>
-              </div> -->
 
               <div class="contact-item">
                 <svg
@@ -426,7 +504,6 @@
               <li><a href="#">Cultural Programme</a></li>
               <li><a href="#">Sports & Games</a></li>
               <li><a href="#">News & Events</a></li>
-              <!-- <li><a href="#">NCC</a></li> -->
             </ul>
           </div>
 
@@ -468,5 +545,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="alumni-form.js"></script>
   </body>
 </html>
